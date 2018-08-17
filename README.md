@@ -1,6 +1,9 @@
 # newsy
 
-Newsy is a command line news client for Reddit and HackerNews that loads the latest stories, displays them in the terminal, and saves them to a file. This program was built as an exercise while working through [Hands-on Concurrency with Go by Leo Tindall](https://www.safaribooksonline.com/videos/hands-on-concurrency-with/9781788993746).
+`newsy` is a command line news client for Reddit and HackerNews that loads the latest stories, displays them in the terminal, and saves them to a file. This program was built as an exercise while working through [Hands-on Concurrency with Go by Leo Tindall](https://www.safaribooksonline.com/videos/hands-on-concurrency-with/9781788993746).
+
+`conewsy` is the IO concurrent version.
+
 
 ## Resources
 
