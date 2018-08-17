@@ -88,15 +88,13 @@ func newRedditStories(c chan<- Story) {
 }
 
 func outputToConsole(c <-chan Story) {
-    for {
-        s := <-c
+    for s := range c {
         fmt.Printf("%s: %s \nby %s on %s\n\n", s.title, s.url, s.author, s.source)
     }
 }
 
 func outputToFile(c <-chan Story, file *os.File) {
-    for {
-        s := <-c
+    for s := range c {
         fmt.Fprintf(file, "%s: %s \nby %s on %s\n\n", s.title, s.url, s.author, s.source)
     }
 }
