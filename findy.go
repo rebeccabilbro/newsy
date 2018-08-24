@@ -86,8 +86,7 @@ func newRedditStories(c chan<- Story) {
 }
 
 func outputToStories(c <-chan Story) {
-	for {
-		s := <-c
+	for s := range c {
 		stories = append(stories, s)
 	}
 }
