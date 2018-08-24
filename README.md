@@ -4,6 +4,10 @@
 
 `conewsy` is the IO concurrent version.
 
+`searchy` is a search engine for news stories.
+
+`findy` is a task parallel search engine to the Reddit and HackerNews client. While new stories are being fetched, users can still be making requests to the server (implemented here via `localhost:8080`).
+
 
 ## Resources
 
